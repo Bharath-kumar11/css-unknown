@@ -1,0 +1,124 @@
+
+<!--- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Drop down menu</title>
+    <style>
+      body{
+            padding:0;
+            margin:0;
+            font-family:monospace;
+        }
+        ul{
+            list-style:none;
+            background:#22438C;
+        }
+        ul li{
+            display:inline-block;
+            position:relative;
+        }
+        ul li a{
+            display:block;
+            padding:20px 25px;
+            color:#fff;
+            text-decoration:none;
+            text-align:center;
+            font-size:20px;
+        }
+        ul li ul.dropdown li{
+            display:block;  
+        }
+        ul li ul.dropdown{
+            width:100%;
+            background:steelblue;
+            position:absolute;
+            z-index:999;
+            display:none;
+            text-align:center;
+        }
+        ul li a:hover{
+            background:#112C66;
+        }
+        ul li:hover ul.dropdown{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Languages</a>
+    <ul class="dropdown">
+        <li><a href="#">Html</a></li>
+        <li><a href="#">Css</a></li>
+        <li><a href="#">Html</a></li>
+        <li><a href="#">Javascript</a></li>
+        <li><a href="#"> Php </a></li>
+    </ul>
+    </li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    </ul>
+</body>
+</html>--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+    .dropdownbutton{
+        background-color:tomato;
+        color:white;
+        padding:10px;
+        font-size:16px;
+        border:none;
+        cursor:pointer;
+        position: relative;
+display: inline-block;
+    }
+.dropbtn{
+background-color: tomato;
+color: white;
+padding: 16px;
+font-size: 46px;
+border: none;
+font-family:'Times New Roman', Times, serif;
+border-radius:10px;
+}
+.dropdown-content{
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index:1;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+.dropdown-content a:hover 
+{background-color: cyan;}
+.dropdown:hover .dropdown-content {
+display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">Types of fonts</button>
+        <div class="dropdown-content">
+          <a href="galleryfonts.html">TimesRoman</a>
+          <a href="galleryfonts.html">Monospace</a>
+          <a href="galleryfonts.html">Cursive</a>
+          <a href="galleryfonts.html">Trebuchet MS</a>
+          <a href="galleryfonts.html">Verdana</a>
+          <a href="galleryfonts.html">Ariel</a>
+          <a href="galleryfonts.html">Impact</a>
+          <a href="galleryfonts.html">Serif</a>
+        </div>
+      </div>
+</body>
+</html>
